@@ -1,0 +1,94 @@
+<div class="row mt-3">
+    <div class="col d-flex justify-content-center">
+        <h2>Choose what you need to practice with below.</h2>
+    </div>
+</div>
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6 col-md-4 col-xl-3 mt-3 d-flex justify-content-center">
+        <mat-card class="example-card">
+            <img mat-card-image src="/assets/csv.png" alt="CSV logo">
+            <mat-card-content>
+                <p>
+                    A single CSV to use for practice with transaction data from a fictitious business that has
+                    an online and brick and mortor store.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a [href]="transactionsCSV" rel="alternate">
+                    <button mat-raised-button color="primary">Download</button>
+                </a>
+                <a [routerLink]="'docs/csv'">
+                    <button mat-raised-button color="accent">Docs</button>
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="col-sm-6 col-md-4 col-xl-3  mt-3 d-flex justify-content-center">
+        <mat-card class="example-card">
+            <img mat-card-image src="/assets/json.png" alt="JSON logo">
+            <mat-card-content>
+                <p>
+                    A single JSON file to use for practice with transaction data from a fictitious business that has
+                    an online and brick and mortor store.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a [href]="transactionsJSON">
+                    <button mat-raised-button color="primary">Download</button>
+                </a>
+                <a [routerLink]="'docs/json'">
+                    <button mat-raised-button color="accent">Docs</button>
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="col-sm-6 col-md-4 col-xl-3  mt-3 d-flex justify-content-center">
+        <mat-card class="example-card">
+            <img mat-card-image src="/assets/sql.png" alt="SQL logo">
+            <mat-card-content>
+                <p>
+                    A single table written in SQL to use for practice with transaction data from a fictitious business that has
+                    an online and in-store sales.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button class="mgr-8" mat-raised-button color="primary" (click)="openSelectTableDialog()">Download</button>
+                <a [routerLink]="'docs/sql-table'">
+                    <button mat-raised-button color="accent">Docs</button>
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="col-sm-6 col-md-4 col-xl-3  mt-3 d-flex justify-content-center">
+        <mat-card class="example-card">
+            <img mat-card-image src="/assets/relational.png" alt="tables logo">
+            <mat-card-content>
+                <p>
+                    Multi-table schema in SQL to use for practice with data tables representing a fictitious business that has
+                    an online and in-store sales.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button class="mgr-8" mat-raised-button color="primary" (click)="openSelectSchemaDialog()">Download</button>
+                <a [routerLink]="'docs/sql-schema'">
+                    <button mat-raised-button color="accent">Docs</button>
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <!-- <div class="col-sm-6 col-md-4 col-xl-3  mt-3 d-flex justify-content-center">
+        <mat-card class="example-card">
+            <img mat-card-image src="/assets/api.png" alt="API logo">
+            <mat-card-content>
+                <p>
+                    API endpoints to use for practice with data representing a fictitious business that has
+                    an online and brick and mortor store.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="primary">Access</button>
+                <button mat-raised-button color="accent">Docs</button>
+            </mat-card-actions>
+        </mat-card>
+    </div> -->
+</div>

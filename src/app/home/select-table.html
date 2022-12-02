@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Choose DB System</h1>
+<div mat-dialog-content>
+    <a [href]="transactionsSQL + 'ansi'"><button mat-raised-button color="primary">ANSI</button></a>
+    <br><br>
+    <a [href]="transactionsSQL + 'mariadb'"><button mat-raised-button color="primary">MariaDB</button></a>
+    <br><br>
+    <a [href]="transactionsSQL + 'mysql'"><button mat-raised-button color="primary">MySQL</button></a>
+    <br><br>
+    <a [href]="transactionsSQL + 'oracle'"><button mat-raised-button color="primary">Oracle</button></a>
+    <br><br>
+    <a [href]="transactionsSQL + 'postgresql'"><button mat-raised-button color="primary">PostgreSQL</button></a>
+    <br><br>
+    <a [href]="transactionsSQL + 'sqlite'"><button mat-raised-button color="primary">SQLite</button></a>
+    <br><br>
+    <a [href]="transactionsSQL + 'sql server'"><button mat-raised-button color="primary">SQL Server</button></a>
+    <br><br>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onNoClick()" color="accent" cdkFocusInitial>Close</button><br><br><br>
+</div>

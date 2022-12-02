@@ -1,0 +1,17 @@
+pre code {
+    background-color: #eee;
+    /* border: 1px solid #999; */
+    display: block;
+    padding: 20px;
+    width: 2050px;
+}
+
+pre {
+    margin-bottom: 0px;
+}
+
+div.col-md-12 {
+    border: 1px solid #999;
+    padding-left: 0px;
+    padding-right: 0px;
+}

@@ -1,0 +1,19 @@
+<div class="row mt-3 justify-content-center">
+    <div class="col-md-6">
+        <p>The JSON file contain a simple array of objects with transactions. Below is an example with 2 transactions.</p>
+    </div>
+</div>
+
+<div class="row mt-3 justify-content-center">
+    <div class="col-md-6">
+        <pre><code>{{ sample | json }}</code></pre>
+    </div>
+</div>
+<div class="row mt-3 justify-content-center">
+    <div class="col-md-4 d-flex justify-content-center">
+        <a [href]="transactionsJSON" rel="alternate">
+            <button mat-raised-button color="primary">Download</button>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;<button mat-raised-button color="accent" (click)="back()">Back</button>
+    </div>
+</div>
