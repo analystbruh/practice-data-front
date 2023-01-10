@@ -6,8 +6,11 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public transactionsCSV = 'http://127.0.0.1:5000/api/v1/transactions/csv';
-  public transactionsJSON = 'http://127.0.0.1:5000/api/v1/transactions/json';
+  private prod = 'https://practicing-data.herokuapp.com/'
+  // private dev = 'http://127.0.0.1:5000/';
+
+  public transactionsCSV = `${this.prod}api/v1/transactions/csv`;
+  public transactionsJSON = `${this.prod}api/v1/transactions/json`;
 
   constructor(
     public dialog: MatDialog
@@ -35,7 +38,10 @@ export class HomeComponent implements OnInit {
   styleUrls: ['./select-table.css']
 })
 export class SelectTable {
-  public transactionsSQL = 'http://127.0.0.1:5000/api/v1/transactions/sql?system=';
+  private prod = 'https://practicing-data.herokuapp.com/'
+  // private dev = 'http://127.0.0.1:5000/';
+
+  public transactionsSQL = `${this.prod}api/v1/transactions/sql?system=`;
 
   constructor(public dialogRef: MatDialogRef<SelectTable>) {}
 
@@ -50,7 +56,10 @@ export class SelectTable {
   styleUrls: ['./select-schema.css']
 })
 export class SelectSchema {
-  public transactionsSQL = 'http://127.0.0.1:5000/api/v1/transactions/schema?system=';
+  private prod = 'https://practicing-data.herokuapp.com/'
+  // private dev = 'http://127.0.0.1:5000/';
+
+  public transactionsSQL = `${this.prod}api/v1/transactions/schema?system=`;
 
   constructor(public dialogRef: MatDialogRef<SelectSchema>) {}
 

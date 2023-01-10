@@ -7,13 +7,16 @@ import { map, Observable } from 'rxjs';
 })
 export class ApiService {
 
+  private prod = 'https:practicing-data.herokuapp.com/'
+  // private dev = 'http://localhost:5000/'
+
   constructor(private http: HttpClient) { }
 
   getCSV(): Observable<string> {
-    return this.http.get('http://127.0.0.1:5000/api/v1/transactions/csv', { responseType: 'text'});
+    return this.http.get(`${this.prod}api/v1/transactions/csv`, { responseType: 'text'});
   }
 
   getTable(sys: string): Observable<any> {
-    return this.http.get('http://127.0.0.1:5000/api/v1/transactions/sql', {params: {system: sys}, responseType: 'blob'})
+    return this.http.get(`${this.prod}api/v1/transactions/sql`, {params: {system: sys}, responseType: 'blob'})
   }
 }
