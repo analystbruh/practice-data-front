@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./json-docs.component.css']
 })
 export class JsonDocsComponent implements OnInit {
-  public transactionsJSON = 'http://127.0.0.1:5000/api/v1/transactions/json';
+  private prod = 'https://practicing-data.herokuapp.com/'
+  public transactionsJSON = `${this.prod}api/v1/transactions/json`;
   public sample = [
     {
       "brand": "Fujifilm",
