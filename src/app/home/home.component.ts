@@ -30,6 +30,13 @@ export class HomeComponent implements OnInit {
       width: '300px'
     });
   }
+
+  openTakeTourDialog(): void {
+    this.dialog.open(TakeTour, {
+      width: '90%',
+      height: '80%'
+    });
+  }
 }
 
 @Component({
@@ -62,6 +69,20 @@ export class SelectSchema {
   public transactionsSQL = `${this.prod}api/v1/transactions/schema?system=`;
 
   constructor(public dialogRef: MatDialogRef<SelectSchema>) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
+
+@Component({
+  selector: 'take-tour',
+  templateUrl: './take-tour.html',
+  styleUrls: ['./take-tour.css']
+})
+export class TakeTour {
+
+  constructor(public dialogRef: MatDialogRef<TakeTour>) {}
 
   onNoClick(): void {
     this.dialogRef.close();

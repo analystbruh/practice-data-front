@@ -19,6 +19,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SelectTable } from './home/home.component';
 import { SelectSchema } from './home/home.component';
+import { TakeTour } from './home/home.component';
 import { CsvDocsComponent } from './home/csv-docs/csv-docs.component';
 import { JsonDocsComponent } from './home/json-docs/json-docs.component';
 import { SqlTableDocsComponent } from './home/sql-table-docs/sql-table-docs.component';
@@ -33,6 +34,7 @@ import { SqlSchemaDocsComponent } from './home/sql-schema-docs/sql-schema-docs.c
     AttributionsComponent,
     SelectTable,
     SelectSchema,
+    TakeTour,
     CsvDocsComponent,
     JsonDocsComponent,
     SqlTableDocsComponent,
